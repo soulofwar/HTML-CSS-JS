@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  
 }
 
 /* NavBarCSS */
@@ -64,9 +63,10 @@ a {
 /* Hero Page */
 
 .Hero {
-  max-width: 1300px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-top: 71px;
+  max-width: 1215px;
+  padding-right: 121px;
+  padding-left: 121px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -88,4 +88,20 @@ a {
   font-weight: bold;
   font-size: 64px;
 }
+
+.Hero1text2 {
+  width: 448px;
+}
+
+.Blazing_Text{
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+  color: #808080;
+
+}
+
 
