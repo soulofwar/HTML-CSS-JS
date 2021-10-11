@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* NavBarCSS */
+
+nav, ul {
+  padding-top: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #000000;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #000000;
+  font-size: 15px;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourServices{
+  padding-left: 66.19px;
+}
+
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 135px;
+}
+
+.space {
+  padding-left: 33px;
+}
+
+.Number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 198px;
+}
+
+.phoneimg {
+  width: 20px;
+  height: 20px;
+  padding-left: 62px;
+  padding-right: 6px;
+}
+
+/* Hero Page */
+
+.Hero {
+  max-width: 1300px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbartext {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: #B00000;
+}
+
+.BoldText {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+}
+
