@@ -16,13 +16,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!--Style CSS-->
+  <!--Style CSS, JS-->
 
   <link rel="stylesheet" href="indexstyle.css">
 </head>
 <header>
   <!--NavBar-->
-<nav>
+<nav class="FirstNav">
+  <div id="marker2"></div> 
     <div class="Logo">
       <ul>
        <a href="#"> <img src="Rectangle 3.png" alt="Logo"></a>
@@ -31,7 +32,7 @@
      </div>
      <div class="About">
       <ul>
-        <a href="#">About</a>
+        <a href="about.html.html">About</a>
       </ul>
       <ul class="space">
         <a href="#">Blog&News</a>
@@ -51,18 +52,23 @@
     </div>
 </nav>
 </header>
-
+<body>
 <!--Hosting button-->
 
 
   <div class="Hero">
-    <div class="Hero1part">
-      <div class="navbartext">   
-        <a href="#" class="navbartext">Hosting </a>
-          <a href="#" class="navbartext">Domain</a>
-          <a href="#" class="navbartext">Seo</a>
-          <a href="#" class="navbartext">Email</a>
-      </div>
+    <div class="Hero1part"> 
+
+        <nav class="navbartext">
+          <div id="marker"></div> 
+            <a href="#" class="Hero1menu" active-color = "#B00000">Hosting </a>
+            <a href="#"class="Hero1menu" active-color = "#B00000">Domain</a>
+            <a href="#"class="Hero1menu" active-color = "#B00000">Seo</a>
+            <a href="#"class="Hero1menu" active-color = "#B00000">Email</a>
+        </nav>
+
+        
+
       <div class="Hero1text">
         <p class="BoldText">Premium Web Hosting for Your Website</p>
       </div>
@@ -75,15 +81,215 @@
         <a href="#"> Create on Account</a>
         <a href="#">Chose your plan</a>
       </div>-->
+
+      <div class="Hero1Button">
+        
+        <a href="https://www.google.com/"><button class="button1"  > Create on Account</button></a>
+        <button class="button2"> Chose your plan</button>
+      </div>
     </div>
 
 
   <div class="Hero2part">
-    <img src="Group 6.png" alt="Group6">
+    <img src="Group 6.png" alt="Group6" width="552px" height="504">
   </div>
 </div>
 
-<body>
+<!--Cloud Web Hosting-->
+
+<div class="TrueClour">
+  <div class="TrueClourtext">
+    <h1 class="TrueClourText">
+      True Cloud Web  Hosting
+    </h1>
+    <p class="TrueClourParagraf"> 
+      True Cloud Web Hosting All of the hosting packages we offer are deployed instantly on our SSD powered cloud. We don’t use dedicated servers that operate on single pieces of hardware. Our entire infrastructure is built to be reliable, secure, and scalable.
+      
+      </p>
+  </div>
+  <div class="TrueClourImages">
+    <div class="PrimeImages">
+      <img src="cPanel_orange_RGB 1.png" alt="Logo" class="Logospace0">
+      <img src="secured-by-Imunify360-green 1.png" alt="LogoSecury" class="Logospace1">
+      <img src="litespeed-logo 1.png" alt="LogoLite" class="Logospace2">
+
+    </div>
+    <div class="TwoImages">
+      <img src="Rectangle 11.png" alt="Logo" class="Logospace6">
+      <img src="Rectangle 12.png" alt="Logo" class="Logospace4">
+      <img src="Rectangle 13.png" alt="Logo" class="Logospace5">
+    </div>
+  </div>
+</div>
+
+<!--Images-->
+
+<div class="WhyUs">
+  <div class="Uptime"> 
+    <img src="icn1 1.png" alt="icn1">
+    <h1 class="icntext">99.9% Uptime</h1>
+    <p class="icnparagraf" style="text-align: center;">We Keep Your Web build Online 24x7x365.
+      Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
+  </div>
+
+  <div class="Ups">
+    <img src="Frame 1.png" alt="icn2">
+    <h1 class="icntext"> Blazing Fast Web Hosting</h1>
+    <p class="icnparagraf" style="text-align: center;">We Keep Your Web build Online 24x7x365.
+      Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
+  </div>
+
+  <div class="SSL">
+    <img src="icn4 1.png" alt="icn3">
+    <h1 class="icntext"> Free SSL Certificates</h1>
+    <p class="icnparagraf" style="text-align: center;">We Keep Your Web build Online 24x7x365.
+      Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
+  </div>
+
+  <div class="Magazin">
+  <img src="Frame 2.png" alt="icn4">
+  <h1 class="icntext"> 24x7 Friendly Support</h1>
+  <p class="icnparagraf" style="text-align: center;">We Keep Your Web build Online 24x7x365.
+    Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
+  </div>
+</div>
+
+<div class="Pricing">
+  <div class="Pricing-Text">
+    <p>Ready to get started with 
+      Lemon Wares?</p>
+  </div>
+  <div class="Pricing-Text1">
+    Choose the package that suits you
+  </div>
+  <div class="LABEL">
+    <p class="text1">Monthly</p>
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+      <div class="ball"></div>
+    </label>
+    <p class="text"> Yearly </p>
+  </div>
+
+<div class="part2starter">
+  <div class="starterbox">
+    <div class="starter" >
+      <p class="stext">Starter</p>
+      <p class="stext2">with all your customers via all conversation channels in one central dashboard.</p>
+      <p class="sdollar" id="sdollar">$2.80</p>
+      <p class="stext2" id="month">Per month</p>
+      <div class="buttonthisplan"><p class="chplan">Chose this Plan </p></div>
+      <div class="check-text">
+        <div class="textc">
+           <p class="textc1">&#10003  2GB SSD</p>
+           <p class="textc1">&#10003  10GB Bandwidth</p>
+           <p class="textc1">&#10003  15 Email Accounts</p>
+           <p class="textc1">&#10003  Unlimited Database</p>
+           <p class="textc1">&#10003  4 Subdomains</p>
+           <p class="textc1">&#10003  1 Parked Domain</p>
+           <p class="textc1">&#10003  2 Websites</p>
+           <p class="textc1">&#10003  Free SSL</p>
+          <p class="textc1">&#10003  Softaculous</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="starterbox">
+    <div class="starter" >
+      <p class="stext">Standard</p>
+      <p class="stext2">with all your customers via all conversation channels in one central dashboard.</p>
+      <p class="sdollar" id="sdollar2">$4.20</p>
+      <p class="stext2" id="month2" >Per month</p>
+      <div class="buttonthisplan"><p class="chplan">Chose this Plan </p></div>
+      <div class="check-text">
+        <div class="textc">
+           <p class="textc1">&#10003  2GB SSD</p>
+           <p class="textc1">&#10003  10GB Bandwidth</p>
+           <p class="textc1">&#10003  15 Email Accounts</p>
+           <p class="textc1">&#10003  Unlimited Database</p>
+           <p class="textc1">&#10003  4 Subdomains</p>
+           <p class="textc1">&#10003  1 Parked Domain</p>
+           <p class="textc1">&#10003  2 Websites</p>
+           <p class="textc1">&#10003  Free SSL</p>
+          <p class="textc1">&#10003  Softaculous</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="starterbox">
+    <div class="starter" >
+      <p class="stext">Suprem</p>
+      <p class="stext2">with all your customers via all conversation channels in one central dashboard.</p>
+      <p class="sdollar" id="sdollar3">$7.00</p>
+      <p class="stext2" id="month3" >Per month</p>
+      <div class="buttonthisplan"><p class="chplan">Chose this Plan </p></div>
+      <div class="check-text">
+        <div class="textc">
+           <p class="textc1">&#10003  2GB SSD</p>
+           <p class="textc1">&#10003  10GB Bandwidth</p>
+           <p class="textc1">&#10003  15 Email Accounts</p>
+           <p class="textc1">&#10003  Unlimited Database</p>
+           <p class="textc1">&#10003  4 Subdomains</p>
+           <p class="textc1">&#10003  1 Parked Domain</p>
+           <p class="textc1">&#10003  2 Websites</p>
+           <p class="textc1">&#10003  Free SSL</p>
+          <p class="textc1">&#10003  Softaculous</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="CTA">
+  <div class="CTABackground">  <div class="CTAImages"><p class="CTAtext">We're here to make your website awesome.</p></div>
+<button class="button"><img src="whatsapp.png" alt="img"><p class="buttontext">Get  in touch with us</p></button> </div>
+</div> 
+
+<footer>
   
+  <div class="footer">
+    <div class="logotext"><img src="Lemon Wares white Logo 1500px wide 1.png" alt="Images">
+      <p class="footertext">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elem
+      </p></div>
+      
+        <div class="Service">
+          <p class="Servicetext">Service</p>
+          <p class="Servicetexte">Domain</p>
+          <p class="Servicetexte">Shared Hosting</p>
+          <p class="Servicetexte">Could Hosting</p>
+          <p class="Servicetexte">Private Hosting</p>
+        </div>
+        <div class="Hosting">
+          <p class="Servicetext">Hosting</p>
+          <p class="Servicetexte">Cheap Hosting</p>
+          <p class="Servicetexte">Hosting Wordpress</p>
+          <p class="Servicetexte">Email Hosting</p>
+          <p class="Servicetexte">Hosting Unlimited</p>
+        </div>
+        <div class="Company">
+          <p class="Servicetext">Company</p>
+          <p class="Servicetexte">About</p>
+          <p class="Servicetexte">Career</p>
+          <p class="Servicetexte">Contact Us</p>
+        </div>
+        <div class="Help">
+          <p class="Servicetext">Help</p>
+          <p class="Servicetexte">FAQ</p>
+          <p class="Servicetexte">Help support</p>
+        </div>
+      
+    
+  </div>
+
+
+  
+</footer>
+<script src="indexjavascript.js"></script>
+
 </body>
 </html>
