@@ -84,7 +84,7 @@ a {
 .navbartext .Hero1menu {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-size: 15px;
+  font-size: 20px;
   color: #B00000;
   text-decoration: none;
   margin: 0 20px;
@@ -185,6 +185,15 @@ a {
   font-weight: 800;
   font-size: 48px;
   line-height: 64px;
+}
+
+.Message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  color: #2ecc71;
+  font-size: 25px;
 }
 
 .TrueClourParagraf {

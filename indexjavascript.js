@@ -11,16 +11,6 @@ if(contentPosition<screenPosition) {
 
 })
 
-window.addEventListener('scroll',()=> {
-  let content = document.querySelector('.Pricing');
-  let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight;
-  
-  if(contentPosition<screenPosition) {
-    content.classList.add('active');
-  }
-  
-  })
 
 var marker = document.querySelector('#marker');
 var item = document.querySelectorAll('.navbartext .Hero1menu');

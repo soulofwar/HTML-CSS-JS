@@ -1,3 +1,29 @@
+<?php
+
+$msg = "";
+
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if (empty($_POST['username']) || empty($_POST['message'])){
+    $msg = "<div class='alert-nosucces'>Completeaza campurile!</div>";
+  }else {
+    if (strlen($_POST["message"]) <= '30') {
+      $msg = "<div class='alert-nosucces'>Campul nu are 30 elemente!</div>";
+  }
+  else {
+   
+      $msg = "<div class='alert-succes'>Mesajul a fost trimis cu succes!</div>";
+      
+  }
+  
+} 
+
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +36,12 @@
   
   <title>LemonWares</title>
 </head>
-
+<script src="contactus.js"></script>
 <body>
-  <div class="alert-succes" style="display: none"></div>
-  <div class="alert-nosucces" style="display: none"> </div>
+<?php echo $msg; ?>
   <header>
-    <div class="header"><h2>Create Account</h2></div>
-    <form class="form" id="form" action="" method="post">
+    <div class="header"><h2>Contact US</h2></div>
+    <form class="form" id="form" action="" method="POST">
       <div class="form-control">
         <label> Username</label>
         <input type="text" placeholder="UserName" name="username" id="username" maxlength="30">
@@ -25,38 +50,30 @@
         <small>Error message</small>
       </div>
 
-      <script src="createaccount.js"></script>
-   
       <div class="form-control">
-        <label> Email</label>
-        <input type="email" placeholder="UserName@gmail.com" name="email" id="email" maxlength="30">
+        <label> Country</label>
+        <select id="country" name="country">
+          <option value="australia">Moldova</option>
+          <option value="canada">Romania</option>
+          <option value="usa">USA</option>
+        </select>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small>Error message</small>
       </div>
 
   
+    <form class="form" id="form" action="" method="POST">
       <div class="form-control">
-        <label> Password</label>
-        <input type="password" placeholder="Password" name="password" id="password" maxlength="30">
+        <label> Message</label>
+        <input type="text" placeholder="Your question" name="message" id="message" maxlength="300">
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small>Error message</small>
       </div>
-
-      
-   
-      <div class="form-control">
-        <label> Password check</label>
-        <input type="password" placeholder="Repeat Password" name="password2" id="password2">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
-      </div>
-
     
-      <button type ="submit" id="submitBtn">Submit</button>
-      
+      <button id="submitBtn" type="submit">Submit</button>
+     
     </form>
   </header>
 </body>

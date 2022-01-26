@@ -1,18 +1,18 @@
 $(document).ready(function () {
+  
 
   $("#submitBtn").on("click", function (e) {
+    e.preventDefault()
     var usernameField = $("#username").val();
     var passwordField = $("#password").val();
-    var emailField = $("#email").val();
-    var repeatPasswordField = $("#password2").val();
-    e.preventDefault()
     size = checkInputs();
+    
     if(size === true) {
       $.ajax({
         type: "POST",
-        url: "CreateAccount.php",
+        url: "Login.php",
         dataType: "json",
-        data: {username:usernameField, password:passwordField, email:emailField, password2:repeatPasswordField},
+        data: {username:usernameField, password:passwordField},
         success : function(data){
             if (data.code == "200"){          
               $(".alert-succes").html(data.msg);
@@ -24,37 +24,29 @@ $(document).ready(function () {
         }
       });
     }
+   
+ 
   });
   });
 
 
-function checkInputs() {
+ function checkInputs() {
 
   const usernameValue = username.value.trim();
-  const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
-  const password2Value = password2.value.trim();
+
+  var status = true;
   
-var status = true;
   
   if (usernameValue === '') {
   setErrorFor(username, 'Numele de utilizator nu este completat!');
-   status = false;
+  status = false;
   }
   
   else {
   setSuccesFor (username);
   }
 
-   if (emailValue === '') {
-    setErrorFor(email, 'Emailul nu este completat!');
-    status = false;
-    } else if (!validateEmail(emailValue)) {
-      setErrorFor(email, 'Emailul nu este valid!');
-      status = false;
-    } else {
-      setSuccesFor (email);
-    }
     
     var textLength = passwordValue.length;
 
@@ -70,18 +62,7 @@ var status = true;
       setSuccesFor (password);
       }
 
-      if (password2Value ==='') {
-        setErrorFor(password2, 'Introduceti campul!');
-        status = false;
-        } else if (passwordValue !== password2Value) {
-          setErrorFor(password2, 'Parola nu coincide!');
-          status = false;
-        }
-        else {
-        setSuccesFor (password2);
-        }
-
-        return status;
+    return status;
   }
 
 
@@ -100,9 +81,4 @@ function setSuccesFor (input, message) {
 
   formControl.className = 'form-control succes';
 
-}
-
-function validateEmail(email) {
-  const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
 }

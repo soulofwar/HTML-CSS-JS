@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +11,13 @@
   
   <title>LemonWares</title>
 </head>
-
+<script src="login.js"></script>
 <body>
   <div class="alert-succes" style="display: none"></div>
   <div class="alert-nosucces" style="display: none"> </div>
   <header>
-    <div class="header"><h2>Create Account</h2></div>
-    <form class="form" id="form" action="" method="post">
+    <div class="header"><h2>Login ADMIN</h2></div>
+    <form class="form" id="form" action="Login.php" method="POST">
       <div class="form-control">
         <label> Username</label>
         <input type="text" placeholder="UserName" name="username" id="username" maxlength="30">
@@ -25,17 +26,6 @@
         <small>Error message</small>
       </div>
 
-      <script src="createaccount.js"></script>
-   
-      <div class="form-control">
-        <label> Email</label>
-        <input type="email" placeholder="UserName@gmail.com" name="email" id="email" maxlength="30">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
-      </div>
-
-  
       <div class="form-control">
         <label> Password</label>
         <input type="password" placeholder="Password" name="password" id="password" maxlength="30">
@@ -43,20 +33,9 @@
         <i class="fas fa-exclamation-circle"></i>
         <small>Error message</small>
       </div>
-
-      
-   
-      <div class="form-control">
-        <label> Password check</label>
-        <input type="password" placeholder="Repeat Password" name="password2" id="password2">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
-      </div>
-
     
-      <button type ="submit" id="submitBtn">Submit</button>
-      
+      <button id="submitBtn" type="submit">Submit</button>
+     
     </form>
   </header>
 </body>
